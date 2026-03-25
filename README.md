@@ -1,15 +1,24 @@
-# 🛠️ Hackathon Starter Kits
+# 🛠️ AI Hackathon 2026: Starter Kits
 
-Working starting points to get your project running fast.
+Building from scratch is hard. Use these templates to jumpstart your prototype.
 
-## 📦 Contents
+---
 
-1. **[llm-basic](./llm-basic/)**: A minimal FastAPI app that uses an LLM to process text.
-2. **[api-integration](./api-integration/)**: Snippets for calling GitHub APIs and handling JSON.
-3. **[cv-traffic](./cv-traffic/)**: A Python script to run YOLOv8 for vehicle detection.
-4. **[data-processing](./data-processing/)**: A Pandas script for dataset analysis and quality checks.
+## 🟢 Beginner (Zero-Framework)
+- [**llm-basic**](./llm-basic/) — Simplest way to chat with an LLM using raw Python `requests`. **Start here if you're new!**
 
-## 🚀 How to use
-1. Clone this repository.
-2. Navigate to the desired starter kit folder.
-3. Follow the instructions in the `README.md` (if provided) or just run the entry point script.
+## 🟡 Intermediate (Track-Specific)
+- [**cv-traffic**](./cv-traffic/) — Real-time vehicle detection logic using YOLOv8.
+- [**data-processing**](./data-processing/) — Cleaning and normalizing datasets for RL or Fine-Tuning.
+
+## 🔴 Advanced (Agentic & RAG)
+- [**mcp-agent**](./mcp-agent/) — Building an MCP-powered agent with tool-use capabilities. [**Advanced/Optional**]
+- [**rag-pipeline**](./rag-pipeline/) — Dense retrieval pipeline using ChromaDB and Sentence-Transformers. [**Advanced/Optional**]
+
+---
+
+## 🛠️ Global Setup
+All kits require a `.env` file for API keys.
+1. Copy `.env.example` to `.env`.
+2. Add your keys (OpenAI, Anthropic, etc.).
+3. Run `pip install -r requirements.txt`.
